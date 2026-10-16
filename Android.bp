@@ -1,0 +1,36 @@
+package {
+    default_applicable_licenses: ["external_python_mako_license"],
+}
+
+license {
+    name: "external_python_mako_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-MIT",
+    ],
+    license_text: [
+        "LICENSE.txt",
+    ],
+}
+
+python_library_host {
+    name: "mako",
+    srcs: [
+        "mako/**/*.py",
+    ],
+    libs: [
+        "py-setuptools",
+        "py-markupsafe",
+    ],
+}
+
+python_library_host {
+    name: "py-mako",
+    srcs: [
+        "mako/**/*.py",
+    ],
+    libs: [
+        "py-setuptools",
+        "py-markupsafe",
+    ],
+}

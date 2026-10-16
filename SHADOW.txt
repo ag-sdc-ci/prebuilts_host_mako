@@ -1,0 +1,5 @@
+shadow prebuilt repo: mako (host)
+  arch package: python-mako v1.4.3-1, Arch Linux extra repo
+  api-level: universal (Python library host)
+  layout: python-mako-*.pkg.tar.zst at root; extracted mako/ python module; Android.bp providing mako & py-mako
+  date: 2026-10-16
